@@ -1,0 +1,34 @@
+{
+  "name": "globaltek.testrail-test-env",
+  "description": "Testrail: Test Environment",
+  "version": "0.0.0",
+  "author": "Lorenzo Dela Cruz",
+  "repository": {
+    "type": "git",
+    "url": "TODO: Add the GitHub URL to your extension in package.json"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.8.0"
+  },
+  "ahaExtension": {
+    "contributes": {
+      "views": {
+        "samplePage": {
+          "title": "Sample Page",
+          "entryPoint": "src/views/samplePage.js",
+          "host": "page",
+          "location": {
+            "menu": "Work"
+          }
+        }
+      },
+      "commands": {
+        "sampleCommand": {
+          "title": "Sample Command",
+          "entryPoint": "src/commands/sampleCommand.js"
+        }
+      }
+    }
+  }
+}
