@@ -1,7 +1,7 @@
 {
   "name": "globaltek.testrail-test-env",
   "description": "Testrail: Test Environment",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Lorenzo Dela Cruz",
   "repository": {
     "type": "git",
@@ -9,26 +9,50 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^16.8.0"
+    "@types/node": "^20.12.12",
+    "@types/react": "^16.14.60"
   },
   "ahaExtension": {
     "contributes": {
       "views": {
-        "samplePage": {
-          "title": "Sample Page",
-          "entryPoint": "src/views/samplePage.js",
-          "host": "page",
-          "location": {
-            "menu": "Work"
-          }
-        }
-      },
-      "commands": {
-        "sampleCommand": {
-          "title": "Sample Command",
-          "entryPoint": "src/commands/sampleCommand.js"
+        "testrail-cases": {
+          "title": "TestRail: Test Environment",
+          "entryPoint": "src/views/TestRailAha.js",
+          "host": "attribute",
+          "recordTypes": [
+            "Feature",
+            "Requirement",
+            "Epic",
+            "Release"
+          ]
         }
       }
-    }
+    },
+    "cspSources": [
+      "https://trajector.testrail.com",
+      "https://testrail-lite.testrail.io",
+      "https://aha-testrail-testcases-list.srilan-catalinio.workers.dev",
+      "https://aha-edit-custom-fields.srilan-catalinio.workers.dev/",
+      "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/getID",
+      "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/getProj",
+      "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/editCustomFields",
+      "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/updateCase",
+      "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/getRefs"
+    ]
+  },
+  "dependencies": {
+    "@aha-develop/aha-develop-react": "^1.4.2",
+    "axios": "^1.5.1",
+    "dotenv": "^16.3.1",
+    "react-helmet": "^6.1.0",
+    "rollup": "^3.29.4",
+    "typescript": "^5.2.2",
+    "vanilla-toast": "^0.5.0"
+  },
+  "webpack": {
+    "configure": "./webpack.config.ext.js"
+  },
+  "browser": {
+    "./src": "./src/views/TestRailAha.js"
   }
 }

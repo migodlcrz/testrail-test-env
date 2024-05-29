@@ -1,0 +1,7 @@
+{
+  "AHA_GET_FEATURE_APIKEY": "d9b58d18a6ec99341217ec312117c5a597059235a721125453a0af757e89c97a",
+  "TESTRAIL_TESTCASE_LIST": "https://aha-testrail-testcases-list.srilan-catalinio.workers.dev",
+  "AHA_EDIT_CUSTOM_FIELD": "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/editCustomFields",
+  "TESTRAIL_UPDATE_CASE": "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/updateCase",
+  "TESTRAIL_GET_CASE": "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/getRefs"
+}
