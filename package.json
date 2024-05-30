@@ -31,13 +31,14 @@
     "cspSources": [
       "https://trajector.testrail.com",
       "https://testrail-lite.testrail.io",
-      "https://aha-testrail-testcases-list.srilan-catalinio.workers.dev",
-      "https://aha-edit-custom-fields.srilan-catalinio.workers.dev/",
-      "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/getID",
-      "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/getProj",
-      "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/editCustomFields",
-      "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/updateCase",
-      "https://aha-endpoints-migration.srilan-catalinio.workers.dev/api/getRefs"
+      "https://aha-testrail-integration.srilan-catalinio.workers.dev",
+      "https://aha-testrail-integration.srilan-catalinio.workers.dev/",
+      "https://aha-testrail-integration.srilan-catalinio.workers.dev/api/getList",
+      "https://aha-testrail-integration.srilan-catalinio.workers.dev/api/getID",
+      "https://aha-testrail-integration.srilan-catalinio.workers.dev/api/getProj",
+      "https://aha-testrail-integration.srilan-catalinio.workers.dev/api/editCustomFields",
+      "https://aha-testrail-integration.srilan-catalinio.workers.dev/api/updateCase",
+      "https://aha-testrail-integration.srilan-catalinio.workers.dev/api/getRefs"
     ]
   },
   "dependencies": {
