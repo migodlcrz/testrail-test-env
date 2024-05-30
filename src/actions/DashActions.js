@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { createToast } from "../components/Toast";
 import link from "../views/links.json";
-import { corsHeadersWithAuth } from "../components/corsHeaders";
+import { corsHeaders } from "../components/corsHeaders";
 
 export function useDashActions() {
   const [tempFTC, setTempFTC] = useState([]);
@@ -22,7 +22,7 @@ export function useDashActions() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          ...corsHeadersWithAuth,
+          ...corsHeaders,
           Authorization: `Bearer ${link.AHA_GET_FEATURE_APIKEY}`,
         },
         body: JSON.stringify({ id2, associated_test_cases: featString }),
@@ -97,7 +97,7 @@ export function useDashActions() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          ...corsHeadersWithAuth,
+          ...corsHeaders,
           Authorization: `Bearer ${link.AHA_GET_FEATURE_APIKEY}`,
         },
         body: JSON.stringify({ id2, associated_test_cases: featString }),
@@ -174,7 +174,7 @@ export function useDashActions() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          ...corsHeadersWithAuth,
+          ...corsHeaders,
           Authorization: `Bearer ${link.AHA_GET_FEATURE_APIKEY}`,
         },
         body: JSON.stringify({ id2, associated_test_cases: featString }),
